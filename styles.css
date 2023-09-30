@@ -32,3 +32,31 @@ body {
 .bold {
     font-weight: bold;
 }
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 200px ;
+    height: 30px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+form button {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 6px;
+    border-color: black;
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+form button:hover{
+    scale: 1.1;
+    cursor: pointer;
+    transform: translateX(5px);
+}
