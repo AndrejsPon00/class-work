@@ -224,13 +224,32 @@
             about Tammy, visit her website by clicking the icons above.<br><br>
         </span>
 
-        <form  action="/">
+        <form action="">
             <label class="bold font-18px" for="email">Email:</label><br>
             <input cl type="text" id="email" name="email" value="test@gmail.com"><br>
             <button class="button" value="Submit">Subscribe</button>
         </form>
+
+        <form>
+            <img id="myImage" src="arrow.png" />
+            <p>Click button below to move the image to right</p>
+            <input class="button" type="button" value="Click Me" onclick="moveRight();" />
+        </form>
     </div>
-    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+        var imgObj = null;
+
+        function init() {
+            imgObj = document.getElementById('myImage');
+            imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+        }
+
+        window.onload = init;
+    </script>
 </body>
 
 </html>
